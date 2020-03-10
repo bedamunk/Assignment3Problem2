@@ -20,6 +20,10 @@ public class Cars {
 		protected CarOwners owner;
 		
 		public Cars() {
+			this.make = "";
+			this.model = "";
+			this.year = 0;
+			this.vinNumber = 0;
 			
 		}
 		
@@ -80,8 +84,8 @@ public class Cars {
 		
 		// toString method
 		public String toString() {
-			String carinfo = owner.toString()+ "\nVin Number: " + vinNumber + "\nMake: " + make + 
-			"\nModel: " + model;
+			String carinfo = owner.toString()+ "\nVin Number: " + this.vinNumber + "\nMake: " + this.make + 
+			"\nModel: " + this.model;
 			return carinfo;
 		}
 	
