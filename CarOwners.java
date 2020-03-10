@@ -16,6 +16,8 @@ public class CarOwners {
 		protected String address;
 		
 		public CarOwners() {
+			this.name = "";
+			this.address = "";
 			
 		}
 		
@@ -52,7 +54,7 @@ public class CarOwners {
 			
 		// toString method
 		public String toString() {
-			String carinfo = "Owner Name: " + name + "\nOwner Address: " + address;
+			String carinfo = "Owner Name: " + this.name + "\nOwner Address: " + this.address;
 			return carinfo;
 		}
 	
